@@ -2,10 +2,10 @@
 
 ## Objective
 
-- Create a `Node<E>` class using generics to hold a value and the prev/next node in the list
-- Using `Node`, implement a `DoublyLinkedList` class that implements the provided `List` interface.
+- Create a `Node<E>` class using generics to hold a value and the prev/next node in the list(done)
+- Using `Node`, implement a `DoublyLinkedList` class that implements the provided `List` interface.(done)
 
-### `Node<E>` Class
+### `Node<E>` Class(done)
 
 You will use this `Node<E>` class to represent a node in your `DoublyLinkedList`. This class should be able to hold a value  of any type and the previous/next node when appropriate. When there is no previous or next node, the values should be `null`.
 
@@ -34,9 +34,9 @@ Node<String> last = new Node<>("giant snake");
 System.out.println(next.equals(last));
 ```
 
-### DoublyLinkedList
+### DoublyLinkedList(in progress)
 
-Create a class `DoublyLinkedList<E>` that implements the provided `List` interface. This class should implement a doubly linked list of a generic type using `Node<E>`. 
+Create a class `DoublyLinkedList<E>` that implements the provided `List` interface. This class should implement a doubly linked list of a generic type using `Node<E>`.(done)
 
 Since your class implements the `List` interface, your class must contain (at least) all the methods defined by the interface. They should fulfill the functionality described by the comments in the interface and throw all exceptions as described. You may add any private helper methods or private instance variables you need to complete the functionality of the class. You will at least need to a default constructor that creates an empty list.
 
