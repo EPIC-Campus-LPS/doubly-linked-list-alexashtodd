@@ -36,7 +36,7 @@ System.out.println(next.equals(last));
 
 ### DoublyLinkedList(in progress)
 
-Create a class `DoublyLinkedList<E>` that implements the provided `List` interface. This class should implement a doubly linked list of a generic type using `Node<E>`. 
+Create a class `DoublyLinkedList<E>` that implements the provided `List` interface. This class should implement a doubly linked list of a generic type using `Node<E>`.(done)
 
 Since your class implements the `List` interface, your class must contain (at least) all the methods defined by the interface. They should fulfill the functionality described by the comments in the interface and throw all exceptions as described. You may add any private helper methods or private instance variables you need to complete the functionality of the class. You will at least need to a default constructor that creates an empty list.
 
