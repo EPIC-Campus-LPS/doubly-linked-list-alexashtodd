@@ -40,4 +40,7 @@ public class Node<E> {
         this.prev = prev;
     }
 
+    public String toString(){
+        return "Node(" + getValue().toString() + ")";
+    }
 }
