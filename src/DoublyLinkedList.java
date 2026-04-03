@@ -35,28 +35,28 @@ public class DoublyLinkedList<E> implements List {
     @Override
     public Object remove() {
         Node<E> temp = end_of_list();
-        Node<E> temp2 = temp.getPrevNode();
-        temp.setPrevNode(null);
-        temp2.setNextNode(null);
+        Node<E> tempn = temp.getNextNode();
+        Node<E> tempp = temp.getPrevNode();
+        if (temp.getNextNode() != null){
+            temp.setPrevNode(tempn);
+        }
+        if (temp.getPrevNode() != null){
+            temp.setNextNode(tempp);
+        }
         return null;
     }
 
     @Override
     public Object remove(int i) throws IndexOutOfBoundsException {
         Node<E> temp = xOfList(i);
-        if (temp.getPrevNode() == null) {
-            Node<E> temp2 = head.getNextNode();
-            temp2.setPrevNode(null);
-        } else if (temp.getNextNode() == null){
-            temp.getPrevNode().setNextNode(null);
-        } else{
-            Node<E> tempP = temp.getPrevNode();
-            Node<E> tempN = temp.getNextNode();
-            tempP.setNextNode(tempN);
-            tempN.setPrevNode(tempP);
+        Node<E> tempn = temp.getNextNode();
+        Node<E> tempp = temp.getPrevNode();
+        if (temp.getNextNode() != null){
+            temp.setPrevNode(tempn);
         }
-
-
+        if (temp.getPrevNode() != null){
+            temp.setNextNode(tempp);
+        }
         return null;
     }
 

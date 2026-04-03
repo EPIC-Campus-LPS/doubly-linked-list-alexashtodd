@@ -9,10 +9,10 @@ public class Node<E> {
         this.prev = null;
     }
 
-    public Node(E name, Node<E> next) {
+    public Node(E name, Node<E> prev) {
         this.name = name;
-        this.next = next;
-        this.prev = null;
+        this.next = null;
+        this.prev = prev;
     }
 
     // You can add accessor (getter) and mutator (setter) methods here if needed
@@ -42,5 +42,14 @@ public class Node<E> {
 
     public String toString(){
         return "Node(" + getValue().toString() + ")";
+    }
+
+    public boolean equals(Node<E> node) {
+        if (node.getValue().equals(this.getValue())) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }
